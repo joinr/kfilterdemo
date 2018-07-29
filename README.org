@@ -16,9 +16,8 @@ invokes the charting functions via input:
 This will produce two charts, rendered via incanter.charts 
 and (currently) JFreeChart like these:
 
-[[./chart1.png][chart1]]
+
 [[chart1.png]]
-[[./chart2.png][chart2]]
 [[chart2.png]]
 
 
