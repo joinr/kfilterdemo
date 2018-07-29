@@ -7,15 +7,19 @@ A port of the python demo from [[https://scipy-cookbook.readthedocs.io/items/Kal
 You can see the tail of the script in kfilter.core, which 
 invokes the charting functions via input:
 
+#+BEGIN_SRC clojure
 (let [res (experiment-infix (init))]
   (i/view (estimate-plot res))
   (i/view (estimated-apriori-plot res)))
+#+END_SRC
 
 This will produce two charts, rendered via incanter.charts 
 and (currently) JFreeChart like these:
 
 [[./chart1.png][chart1]]
+[[chart1.png]]
 [[./chart2.png][chart2]]
+[[chart2.png]]
 
 
 * License
