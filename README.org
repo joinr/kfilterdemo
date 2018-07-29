@@ -1,0 +1,26 @@
+* kfilter
+
+A port of the python demo from [[https://scipy-cookbook.readthedocs.io/items/KalmanFiltering.html][Python kalman filter demo]].
+
+* Usage
+
+You can see the tail of the script in kfilter.core, which 
+invokes the charting functions via input:
+
+(let [res (experiment-infix (init))]
+  (i/view (estimate-plot res))
+  (i/view (estimated-apriori-plot res)))
+
+This will produce two charts, rendered via incanter.charts 
+and (currently) JFreeChart like these:
+
+[[./chart1.png][chart1]]
+[[./chart2.png][chart2]]
+
+
+* License
+
+Copyright  2018 Joinr
+
+Distributed under the Eclipse Public License either version 1.0 or (at
+your option) any later version.
